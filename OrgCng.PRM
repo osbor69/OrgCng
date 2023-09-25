@@ -1,0 +1,6 @@
+SERVER_NAME=127.0.0.1:c:\dprog\orglist\data\orglist.fdb
+USER_NAME=SYSDBA
+PASSWORD=masterkey
+ADMIN=51
+REPDEADLOCK=5
+OPERATION=CNG
