@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Menus, ExtCtrls, ShellAPI, Registry, Math, DateUtils, StrUtils, RegStr, DB,
+  Dialogs, StdCtrls, Menus, ExtCtrls, ShellAPI, Math, DateUtils, StrUtils, DB,
   FIBDatabase, pFIBDatabase, FIBQuery, pFIBQuery, FIBDataSet, pFIBDataSet;
 
 const WM_NOTIFYTRAYICON = WM_USER + 1;
@@ -26,7 +26,6 @@ type
   TCustomThread = class(TThread)
   private
     tm: TTimer;
-    TimerRunning: boolean;
     db: TpFIBDatabase;
     nTrns: longint;
     nUpd: TUpdOper;
@@ -100,7 +99,6 @@ type
   private
     { Private declarations }
 	  tray: TNotifyIconData;
-    Reg: TRegistry;
     Cng: TCng;
     Isp: TIsp;
     Bot: TBot;
@@ -181,7 +179,6 @@ var i: longint;
 begin
 	{if Win32Platform=VER_PLATFORM_WIN32_NT
   then SetPriorityClass(GetCurrentProcess,HIGH_PRIORITY_CLASS);}
-  Reg:=TRegistry.Create;
   with tray do begin
     cbSize:=SizeOf(TNotifyIconData); Wnd:=Handle; uID:=1;
     uFlags := NIF_ICON or NIF_MESSAGE or NIF_TIP; uCallBackMessage:=WM_NOTIFYTRAYICON;
@@ -231,7 +228,6 @@ end;
 procedure TMain.FormDestroy(Sender: TObject);
 begin
   Cng.Free; Isp.Free; Bot.Free; Shell_NotifyIcon(NIM_DELETE,@tray);
-  Reg.Free;
 end;
 
 procedure TMain.WMTRAYICONNOTIFY(var Msg: TMessage);
@@ -318,14 +314,13 @@ end;
 
 procedure TCustomThread.TimerScan;
 var oCon: boolean;
+  tm: TTimer;
 begin
-  if not TimerRunning then begin
-    TimerRunning:=true; oCon:=TrnsStart;
-    try
-      FTimerScan;
-    finally
-      TrnsEnd(oCon); TimerRunning:=false;
-    end;
+  tm:=pointer(Sender); tm.Enabled:=false; oCon:=TrnsStart;
+  try
+    FTimerScan;
+  finally
+    TrnsEnd(oCon); tm.Enabled:=true;
   end;
 end;
 

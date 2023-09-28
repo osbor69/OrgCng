@@ -1,20 +1,20 @@
 [Closed Files]
-File_0=SourceModule,'C:\Dprog\OrgCng\FMain.dfm',0,1,1,1,1,0,0
-File_1=SourceModule,'C:\Dprog\smail_ftp\Misc.pas',0,1,93,26,111,0,0
-File_2=SourceModule,'C:\Dprog\ORGLIST\TRASH\FDM.pas',0,1,922,17,956,1,0
-File_3=SourceModule,'C:\Dprog\OURLIB\VCL\MulQry.PAS',0,5,3319,117,3326,0,0
-File_4=SourceModule,'C:\DLib\FIBPLUS\source\pFIBDataSet.pas',0,1,29,29,56,0,0
-File_5=SourceModule,'C:\DLib\FIBPLUS\source\FIBDataSet.pas',0,1,1149,1,1170,0,0
-File_6=SourceModule,'C:\Dprog\OURLIB\CopyData.pas',0,1,1,8,10,0,0
-File_7=SourceModule,'c:\program files (x86)\borland\delphi7\source\rtl\common\classes.pas',0,1,4216,1,4220,0,0
-File_8=SourceModule,'C:\Dprog\OURLIB\MyTypes.pas',0,1,1,1,1,0,0
-File_9=SourceModule,'C:\Dprog\ORGLIST\TRASH\FPswdEd.pas',0,1,891,85,909,0,0
+File_0=SourceModule,'C:\Dprog\smail_ftp\Misc.pas',0,1,93,26,111,0,0
+File_1=SourceModule,'C:\Dprog\ORGLIST\TRASH\FDM.pas',0,1,922,17,956,1,0
+File_2=SourceModule,'C:\Dprog\OURLIB\VCL\MulQry.PAS',0,5,3319,117,3326,0,0
+File_3=SourceModule,'C:\DLib\FIBPLUS\source\pFIBDataSet.pas',0,1,29,29,56,0,0
+File_4=SourceModule,'C:\DLib\FIBPLUS\source\FIBDataSet.pas',0,1,1149,1,1170,0,0
+File_5=SourceModule,'C:\Dprog\OURLIB\CopyData.pas',0,1,1,8,10,0,0
+File_6=SourceModule,'c:\program files (x86)\borland\delphi7\source\rtl\common\classes.pas',0,1,4216,1,4220,0,0
+File_7=SourceModule,'C:\Dprog\OURLIB\MyTypes.pas',0,1,1,1,1,0,0
+File_8=SourceModule,'C:\Dprog\ORGLIST\TRASH\FPswdEd.pas',0,1,891,85,909,0,0
+File_9=SourceModule,'C:\Dprog\ORGLIST\TRASH\FMain.pas',0,1,1,1,1,0,0
 
 [Modules]
 Module0=C:\Dprog\OrgCng\FMain.pas
-Module1=C:\Dprog\ORGLIST\TRASH\OLProc.pas
-Module2=C:\DPROG\OrgCng\OrgCng.DPR
-Module3=C:\Dprog\OURLIB\My_pr.PAS
+Module1=C:\Dprog\OrgCng\OrgCng.dpr
+Module2=C:\Dprog\OURLIB\My_pr.PAS
+Module3=C:\Dprog\ORGLIST\TRASH\OLProc.pas
 Count=4
 EditWindowCount=1
 
@@ -23,17 +23,17 @@ ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
-[C:\Dprog\ORGLIST\TRASH\OLProc.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\DPROG\OrgCng\OrgCng.DPR]
+[C:\Dprog\OrgCng\OrgCng.dpr]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
 [C:\Dprog\OURLIB\My_pr.PAS]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\Dprog\ORGLIST\TRASH\OLProc.pas]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
@@ -57,31 +57,31 @@ State=0
 Left=303
 Top=105
 Width=975
-Height=759
+Height=887
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=959
-ClientHeight=720
+ClientHeight=848
 LeftPanelSize=0
 LeftPanelClients=CodeExplorer@EditWindow0
 LeftPanelData=00000400010000000C000000436F64654578706C6F726572000000000000000000000000000000000001000000000000000000000000FFFFFFFF
 RightPanelSize=0
 BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400010000000B0000004D65737361676556696577BF03000000000000027900000000000000010000000000000000000000000100000000C7030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF03000000000000FFFFFFFF
+BottomPanelData=00000400010000000B0000004D65737361676556696577BF03000000000000027900000000000000010000000000000000000000000100000000C7030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF030000000000000100000000BF03000000000000FFFFFFFF
 
 [View0]
 Module=C:\Dprog\OrgCng\FMain.pas
-CursorX=24
-CursorY=620
-TopLine=608
+CursorX=36
+CursorY=323
+TopLine=302
 LeftCol=1
 
 [View1]
 Module=C:\Dprog\ORGLIST\TRASH\OLProc.pas
-CursorX=1
-CursorY=134
-TopLine=127
+CursorX=5
+CursorY=307
+TopLine=295
 LeftCol=1
 
 [View2]
@@ -92,7 +92,7 @@ TopLine=12138
 LeftCol=1
 
 [View3]
-Module=C:\DPROG\OrgCng\OrgCng.DPR
+Module=C:\Dprog\OrgCng\OrgCng.dpr
 CursorX=18
 CursorY=11
 TopLine=1
@@ -110,11 +110,11 @@ State=0
 Left=0
 Top=0
 Width=404
-Height=714
+Height=842
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=404
-ClientHeight=714
+ClientHeight=842
 TBDockHeight=380
 LRDockWidth=408
 Dockable=1
@@ -135,9 +135,9 @@ Width=1280
 Height=123
 MaxLeft=-1
 MaxTop=-1
-MaxWidth=1552
+MaxWidth=1296
 MaxHeight=123
-ClientWidth=1536
+ClientWidth=1280
 ClientHeight=84
 
 [ProjectManager]
@@ -209,11 +209,11 @@ State=0
 Left=0
 Top=0
 Width=404
-Height=714
+Height=842
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=404
-ClientHeight=714
+ClientHeight=842
 TBDockHeight=622
 LRDockWidth=190
 Dockable=1
@@ -230,11 +230,11 @@ State=0
 Left=0
 Top=0
 Width=404
-Height=714
+Height=842
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=404
-ClientHeight=714
+ClientHeight=842
 TBDockHeight=197
 LRDockWidth=453
 Dockable=1
@@ -252,11 +252,11 @@ State=0
 Left=0
 Top=0
 Width=404
-Height=714
+Height=842
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=404
-ClientHeight=714
+ClientHeight=842
 TBDockHeight=380
 LRDockWidth=408
 Dockable=1
@@ -499,15 +499,15 @@ State=0
 Left=1
 Top=103
 Width=447
-Height=761
+Height=889
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=431
-ClientHeight=722
+ClientHeight=850
 TBDockHeight=720
 LRDockWidth=216
 Dockable=1
 TabPosition=2
-ActiveTab=Object Inspector
+ActiveTab=Call Stack
 TabDockClients=PropertyInspector,WatchWindow,CallStackWindow,BreakpointWindow
 
